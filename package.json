@@ -16,6 +16,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "rm -rf docs && npm run build && mv build docs && cp docs/index.html docs/404.html",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
